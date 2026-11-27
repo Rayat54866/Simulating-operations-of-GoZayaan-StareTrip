@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo54.Available_Countries_Controller">
+   <children>
+      <Label layoutX="224.0" layoutY="39.0" text="Available Countries">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="availableCountriesTV" layoutX="130.0" layoutY="108.0" prefHeight="200.0" prefWidth="340.0">
+        <columns>
+          <TableColumn fx:id="availableCountriesTC" prefWidth="191.2000732421875" text="Country" />
+          <TableColumn fx:id="visaServicesTC" prefWidth="147.99993896484375" text="Visa Services" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

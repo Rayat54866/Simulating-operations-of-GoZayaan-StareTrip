@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo54.Available_Visa_Types_Controller">
+   <children>
+      <Label layoutX="258.0" layoutY="33.0" text="Visa Types">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="visaTypesTV" layoutX="123.0" layoutY="94.0" prefHeight="200.0" prefWidth="353.0">
+        <columns>
+          <TableColumn fx:id="visaTypesTC" prefWidth="144.79998779296875" text="Visa Types" />
+          <TableColumn fx:id="visaAvailableInCountruesTC" prefWidth="208.00002441406252" text="No. of Countries Available In" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
