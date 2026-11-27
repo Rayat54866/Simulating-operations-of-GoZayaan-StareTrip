@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo54.Filter_Visa_Services_Controller">
+   <children>
+      <TableView fx:id="FiltervisaServicesTV" layoutX="4.0" layoutY="32.0" prefHeight="200.0" prefWidth="714.0">
+         <columns>
+            <TableColumn fx:id="countryNameFilterTC" prefWidth="131.2000060081482" text="Country name" />
+            <TableColumn fx:id="visaTypeFilterTC" prefWidth="148.79998779296875" text="Visa Type" />
+            <TableColumn fx:id="processingTimeFilterTC" prefWidth="148.79998779296875" text="Processing TIme" />
+            <TableColumn fx:id="serviceFeeFilterTC" prefWidth="148.79998779296875" text="Service Fee" />
+            <TableColumn fx:id="isVisaAvailableFilterTC" prefWidth="148.79998779296875" text="Is Visa Available?" />
+         </columns>
+      </TableView>
+      <TextField fx:id="FilterCountryNameTF" layoutX="117.0" layoutY="272.0" promptText="Enter country name" />
+      <ComboBox fx:id="FilterVisaTypeCB" layoutX="452.0" layoutY="272.0" prefWidth="150.0" />
+      <Label layoutX="388.0" layoutY="276.0" text="Visa Type:" />
+      <Button layoutX="335.0" layoutY="322.0" mnemonicParsing="false" onAction="#filterButtonOA" text="Filter" />
+   </children>
+</AnchorPane>

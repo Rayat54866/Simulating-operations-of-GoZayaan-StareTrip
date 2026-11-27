@@ -6,4 +6,6 @@ module com.example.demo54 {
 
     opens com.example.demo54 to javafx.fxml;
     exports com.example.demo54;
+    exports com.example.demo54.Rayat;
+    opens com.example.demo54.Rayat to javafx.fxml;
 }
