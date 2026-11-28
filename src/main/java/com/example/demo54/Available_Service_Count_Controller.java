@@ -14,5 +14,13 @@ public class Available_Service_Count_Controller
 
     @javafx.fxml.FXML
     public void availableServiceRefreshCountButtonOA(ActionEvent actionEvent) {
+        int count = 0;
+        for (int i = 0; i < add_Visa_Service_Controller.serviceList.size(); i++) {
+            if (add_Visa_Service_Controller.serviceList.get(i).getIsVisaAvailable()) {
+                count++;
+            }
+        }
+
+        availableServiceCountOutputLabel.setText("" + count);
     }
 }

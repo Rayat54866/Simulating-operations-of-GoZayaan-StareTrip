@@ -5,12 +5,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo54.Visa_Services_Count_Controller">
    <children>
-      <Label fx:id="countOutputLabel" layoutX="278.0" layoutY="124.0" prefHeight="76.0" prefWidth="167.0" />
-      <Button layoutX="86.0" layoutY="149.0" mnemonicParsing="false" onAction="#countVisaServiceButtonOA" text="Count Visa Services" />
-      <Label layoutX="194.0" layoutY="14.0" prefHeight="38.0" prefWidth="167.0" text="Visa Service Count">
+      <Label fx:id="countOutputLabel" layoutX="216.0" layoutY="106.0" prefHeight="76.0" prefWidth="167.0" textFill="#f20000">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Button layoutX="240.0" layoutY="220.0" mnemonicParsing="false" onAction="#countVisaServiceButtonOA" text="Count Visa Services" />
+      <Label layoutX="216.0" layoutY="14.0" prefHeight="38.0" prefWidth="167.0" text="Visa Service Count">
          <font>
             <Font size="18.0" />
          </font>

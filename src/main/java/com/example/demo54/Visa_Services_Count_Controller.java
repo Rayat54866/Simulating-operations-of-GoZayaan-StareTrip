@@ -14,5 +14,9 @@ public class Visa_Services_Count_Controller
 
     @javafx.fxml.FXML
     public void countVisaServiceButtonOA(ActionEvent actionEvent) {
+
+        int count = add_Visa_Service_Controller.serviceList.size();
+        countOutputLabel.setText(String.valueOf(count));
+
     }
 }

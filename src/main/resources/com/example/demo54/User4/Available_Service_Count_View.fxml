@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo54.Available_Service_Count_Controller">
    <children>
       <Label layoutX="207.0" layoutY="30.0" text="Available Service Count">
@@ -13,7 +12,10 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="availableServiceCountOutputLabel" layoutX="216.0" layoutY="96.0" prefHeight="109.0" prefWidth="168.0" />
+      <Label fx:id="availableServiceCountOutputLabel" layoutX="216.0" layoutY="96.0" prefHeight="109.0" prefWidth="168.0" textFill="RED">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
       <Button layoutX="254.0" layoutY="245.0" mnemonicParsing="false" onAction="#availableServiceRefreshCountButtonOA" text="Refresh Count" />
    </children>
 </AnchorPane>
