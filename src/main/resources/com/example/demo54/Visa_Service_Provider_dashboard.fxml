@@ -5,10 +5,12 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo54.Visa_Service_Provider_dashboard_Controller">
+<BorderPane fx:id="visaSPDashboardBorderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo54.Visa_Service_Provider_dashboard_Controller">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -48,4 +50,25 @@
    <bottom>
       <Label prefHeight="18.0" prefWidth="890.0" style="-fx-background-color: grey;" text="Label" BorderPane.alignment="CENTER" />
    </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="146.0" layoutY="247.0" text="Welcome to Visa service provider Dashboard">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="loggedInUserIDLabel" layoutX="288.0" layoutY="285.0" prefHeight="57.0" prefWidth="162.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="146.0" layoutY="298.0" text="Logged in ID:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
 </BorderPane>
